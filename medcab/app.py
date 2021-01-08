@@ -42,7 +42,7 @@ def create_app():
             user = UserModel.query.filter_by(username = username).first()
             if user is not None and user.check_password(request.form['password']):
                 login_user(user)
-                return redirect('/')
+                return redirect('/recomendations')
 
         return render_template('login.html')
     
