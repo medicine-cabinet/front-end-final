@@ -30,8 +30,8 @@ from collections import OrderedDict
 # nn.fit(X)
 # 
 # python -m spacy download en_core_web_lg
-spacy.cli.download("en_core_web_lg")
-nlp = spacy.load("en_core_web_lg")
+spacy.cli.download("en_core_web_sm")
+nlp = spacy.load("en_core_web_sm")
 # tokenizer
 tokenizer = Tokenizer(nlp.vocab)
 
